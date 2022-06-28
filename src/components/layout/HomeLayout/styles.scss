@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.homelayout {
+  display: flex;
+
+  min-height: 100vh;
+
+  .leftpanel {
+    min-width: 1170px;
+    width: 1170px;
+  }
+  .rightpanel {
+    background-color: $blue;
+    padding: 432px 145px;
+    align-items: center;
+    text-align: left;
+    h2 {
+      color: white;
+      text-align: center;
+    }
+    h3 {
+      margin-top: 78px;
+      color: white;
+    }
+  }
+}

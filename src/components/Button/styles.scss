@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.form__button {
+  display: inline;
+  border-radius: 4px;
+  border: 0px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.26px;
+  line-height: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: $blue;
+  cursor: pointer;
+  color: white;
+  &:disabled {
+    color: $gray-400;
+    background-color: $gray-100;
+    pointer-events: none;
+  }
+  &:hover,
+  &:focus {
+    background-color: darken($blue, 8%);
+    transition: all 0.3s ease;
+    color: white;
+  }
+  &:active {
+    background-color: darken($blue, 25%);
+    color: white;
+  }
+}

@@ -1,0 +1,114 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  display: flex;
+
+  .form__field {
+    font-size: 15px;
+    letter-spacing: 0.26px;
+    line-height: 30px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid $gray-100;
+    outline: 0;
+    color: #212121;
+    padding: 10px 12px;
+    transition: border-color 0.2s;
+    &:disabled {
+      background-color: transparent;
+    }
+  }
+
+  .form__field::placeholder {
+    color: transparent;
+  }
+
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.26px;
+    cursor: text;
+    top: 35px;
+  }
+
+  label,
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 10px;
+    display: block;
+    transition: 0.2s;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.26px;
+    color: #9b9b9b;
+    background: #fff;
+    margin-left: 8px;
+    padding: 0 4px;
+  }
+
+  .form__field:focus ~ .form__label {
+    color: $gray-300;
+  }
+
+  .form__field:focus {
+    border: 1px solid $gray-200;
+  }
+
+  .startAdornment {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $gray-200;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .endAdornment {
+    font-size: 1rem;
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    bottom: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $gray-200;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    background: white;
+    top: 68px;
+    z-index: 1;
+  }
+  .menu {
+    padding: 8px;
+    border-bottom: 1px solid $gray-100;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: darken(white, 8%);
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+  }
+
+  .menu-active {
+    @extend .menu;
+    background-color: darken(white, 8%);
+  }
+}

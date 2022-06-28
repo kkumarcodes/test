@@ -1,0 +1,43 @@
+@import "../variables.scss";
+.loginpage {
+  .steper__container {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+    margin-right: 40px;
+  }
+  .login {
+    width: 480px;
+    margin-left: 336px;
+    margin-top: 163px;
+    .haveaccount__label {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      letter-spacing: 0.26px;
+      line-height: 30px;
+    }
+
+    .form__group {
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 30px;
+    }
+    .terms {
+      margin-top: 40px;
+      font-size: 13px;
+      letter-spacing: 0.26px;
+      line-height: 25px;
+    }
+    .password-warning {
+      color: $gray-300;
+      font-size: 12px;
+      letter-spacing: 0.26px;
+      line-height: 20px;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      padding: 0px;
+    }
+  }
+}

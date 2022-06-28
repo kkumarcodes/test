@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 15px;
+  min-height: 100vh;
+  height: 100%;
+  color: $textColor;
+}
+
+.root {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #286efa;
+  font-weight: bold;
+}
+
+.error-message {
+  color: $warningColor;
+  font-size: 12px;
+  letter-spacing: 0.26px;
+  line-height: 30px;
+  padding: 0px;
+  margin: 0px;
+}
